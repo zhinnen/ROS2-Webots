@@ -4,12 +4,19 @@ The project has multiple sections consisting of the build section for lab3 task 
 
 INSTALLATION AND BUILD INSTRUCTIONS AND RUN INSTRUCTIONS
 The necessary steps for installation, build, and run are:
+
 1)Make sure you have a debian Ubuntu 20.04 OS installed
+
+
 2A)Use https://docs.ros.org/en/foxy/Installation/Linux-Install-Debians.html to install the debian package of ROS2
     -This will allow for the performing of ros2 capabilities.
+    
 2B)Alternatively, you can use https://docs.ros.org/en/foxy/Installation/Linux-Install-Binary.html as an installation guide for ROS2
+
 3)Use https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html as a guide to build your workspace. This is where you will run your simulator/program.
+
 4)Once you have your workspace built, you will fill your workspace with relevant WEBOTS information. 
+
 USE THE FOLLOWING TERMINAL COMMANDS:
     source /opt/ros/$ROS_DISTRO/local_setup.bash
 
