@@ -28,9 +28,25 @@ USE THE FOLLOWING TERMINAL COMMANDS:
     rosdep update
     rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
+    #Clone the repository for IS_WS
+    git clone https://github.com/zhinnen/ROS2-Webots.git
+    
     # Building packages
     colcon build
 
     # Source this workspace (careful when also sourcing others)
     source install/local_setup.bash
-5)
+    
+5)Runing the code:
+    
+    #Process for running aftering building
+    #Go to your WS, CD to it
+    cd <ws>
+    
+    #run foxy and install source
+    ~/ros2_foxy/ros2-linux/setup.bash
+    source install/setup.bash
+    
+    #build and run
+    colcon build --packages-select is_ws
+    ros2 launch is_ws navigation_cells_launch.py 
